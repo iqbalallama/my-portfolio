@@ -44,6 +44,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 450px;
+    margin-top: 50px;
 }
 .my-profile{
     width: 45%;
@@ -60,4 +61,51 @@ header{
 .my-picture{
     width: 35%;
     height: 450px;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .main{
+        width: 95%;
+    }
+    .icon i{
+        display: block;
+        position: relative;
+        left: -155px;
+    }
+    .navbar a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        display: none;
+        padding-left: 40px;
+    }
+    .open a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        
+        display: block;
+    }
+    .banner{
+        width: 100%;
+        flex-direction: column;
+    }
+    .my-profile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .my-picture{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
