@@ -4,13 +4,14 @@ document.getElementById('iconbar').addEventListener('click',function(){
 })
 
 document.getElementById('menubar').addEventListener('click',function(e){
-    const menus = document.getElementsByClassName('menu');
-    const current = location.href;
+    const menus = document.querySelectorAll('a');
     for(let i = 0; i< menus.length; i++){
-        if(menus[i].href === current){
+        if(menus[i] === e.target){
             menus[i].classList.add('active')
         }
-        then.classList.remove('active')
+        else{
+            menus[i].classList.remove('active')
+        }
         
     }
 }) 

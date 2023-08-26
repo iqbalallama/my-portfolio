@@ -62,9 +62,21 @@ header{
     width: 35%;
     height: 450px;
 }
+.btn{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.fa-regular{
+    color: white;
+    margin-right: 10px;
+}
 
-
-
+/* responsive part */
 @media screen and (max-width:800px) {
     .main{
         width: 95%;
@@ -100,8 +112,13 @@ header{
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+    .btn{
+        width: 120px;
+        padding: 10px 15px;
     }
     .my-picture{
         width: 100%;
